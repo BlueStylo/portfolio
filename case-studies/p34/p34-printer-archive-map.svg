@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">3D printer engineering archive map</title>
+  <desc id="desc">A portfolio-safe diagram connecting legacy printer hardware, Klipper firmware, calibration, mechanical rebuilds, and evidence still to collect.</desc>
+  <style>
+    :root {
+      color-scheme: light;
+    }
+    text {
+      font-family: Inter, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      fill: #20242a;
+    }
+    .bg {
+      fill: #f7f5ef;
+    }
+    .rail {
+      fill: none;
+      stroke: #262b31;
+      stroke-linecap: round;
+      stroke-width: 3;
+    }
+    .arrow {
+      fill: #262b31;
+    }
+    .card {
+      fill: #ffffff;
+      stroke: #d8d3c8;
+      stroke-width: 2;
+    }
+    .card-alt {
+      fill: #f0ece2;
+      stroke: #d8d3c8;
+      stroke-width: 2;
+    }
+    .chip {
+      fill: #e4a64f;
+    }
+    .chip-cool {
+      fill: #3e8f95;
+    }
+    .chip-dark {
+      fill: #30363d;
+    }
+    .muted {
+      fill: #687078;
+      font-size: 24px;
+      font-weight: 720;
+    }
+    .kicker {
+      fill: #8a6c2f;
+      font-size: 20px;
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+    .title {
+      font-size: 38px;
+      font-weight: 900;
+    }
+    .body {
+      fill: #4c535b;
+      font-size: 22px;
+      font-weight: 650;
+    }
+    .label {
+      fill: #ffffff;
+      font-size: 18px;
+      font-weight: 900;
+    }
+  </style>
+  <rect class="bg" width="1200" height="760" rx="0"/>
+  <text class="kicker" x="64" y="78">P34 / Fabrication archive</text>
+  <text class="title" x="64" y="126">3D 프린터 개조 경험을 포폴 근거로 묶는 구조</text>
+  <text class="muted" x="64" y="168">기구 개조, 펌웨어, 보정, 출력 품질 검증을 한 흐름으로 정리합니다.</text>
+
+  <path class="rail" d="M168 346 H1032"/>
+  <polygon class="arrow" points="1032,346 1008,332 1008,360"/>
+
+  <g transform="translate(64 236)">
+    <rect class="card" width="220" height="220" rx="16"/>
+    <rect class="chip" x="22" y="22" width="74" height="30" rx="15"/>
+    <text class="label" x="40" y="44">01</text>
+    <text class="kicker" x="22" y="86">Raw hardware</text>
+    <text class="body" x="22" y="126">Delta</text>
+    <text class="body" x="22" y="160">Willybot CoreXY</text>
+    <text class="body" x="22" y="194">FlyingBear Reborn</text>
+  </g>
+
+  <g transform="translate(308 236)">
+    <rect class="card-alt" width="220" height="220" rx="16"/>
+    <rect class="chip-dark" x="22" y="22" width="74" height="30" rx="15"/>
+    <text class="label" x="40" y="44">02</text>
+    <text class="kicker" x="22" y="86">Firmware layer</text>
+    <text class="body" x="22" y="126">Klipper</text>
+    <text class="body" x="22" y="160">Moonraker</text>
+    <text class="body" x="22" y="194">Mainsail / camera</text>
+  </g>
+
+  <g transform="translate(552 236)">
+    <rect class="card" width="220" height="220" rx="16"/>
+    <rect class="chip-cool" x="22" y="22" width="74" height="30" rx="15"/>
+    <text class="label" x="40" y="44">03</text>
+    <text class="kicker" x="22" y="86">Calibration loop</text>
+    <text class="body" x="22" y="126">PID / bed level</text>
+    <text class="body" x="22" y="160">Input shaping</text>
+    <text class="body" x="22" y="194">Pressure advance</text>
+  </g>
+
+  <g transform="translate(796 236)">
+    <rect class="card-alt" width="220" height="220" rx="16"/>
+    <rect class="chip" x="22" y="22" width="74" height="30" rx="15"/>
+    <text class="label" x="40" y="44">04</text>
+    <text class="kicker" x="22" y="86">Mechanical rebuild</text>
+    <text class="body" x="22" y="126">Direct extruder</text>
+    <text class="body" x="22" y="160">Voron head mod</text>
+    <text class="body" x="22" y="194">Frame / wiring</text>
+  </g>
+
+  <g transform="translate(278 542)">
+    <rect class="card" width="644" height="122" rx="16"/>
+    <text class="kicker" x="28" y="42">Portfolio proof to attach</text>
+    <text class="body" x="28" y="82">개조 사진, input shaping graph, pressure advance test, 출력 품질 before/after</text>
+  </g>
+</svg>
