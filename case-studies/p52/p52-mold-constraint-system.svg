@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Mold geometry constraint system</title>
+  <desc id="desc">A diagram describing how mold specifications, geometric guardrails, fabrication constraints, and QA loops connect.</desc>
+  <style>
+    text {
+      font-family: Inter, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      fill: #22272d;
+    }
+    .bg {
+      fill: #f6f7f4;
+    }
+    .card {
+      fill: #ffffff;
+      stroke: #d6ddd2;
+      stroke-width: 2;
+    }
+    .mold {
+      fill: #e8efe7;
+      stroke: #5d7d5a;
+      stroke-width: 3;
+    }
+    .mold-cut {
+      fill: #ffffff;
+      stroke: #5d7d5a;
+      stroke-width: 3;
+    }
+    .line {
+      fill: none;
+      stroke: #2a3036;
+      stroke-width: 3;
+    }
+    .accent {
+      fill: #5d7d5a;
+    }
+    .accent2 {
+      fill: #cc8842;
+    }
+    .kicker {
+      fill: #5d7d5a;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .title {
+      font-size: 39px;
+      font-weight: 900;
+    }
+    .muted {
+      fill: #697078;
+      font-size: 23px;
+      font-weight: 720;
+    }
+    .body {
+      fill: #4c555e;
+      font-size: 22px;
+      font-weight: 680;
+    }
+    .label {
+      fill: #ffffff;
+      font-size: 18px;
+      font-weight: 900;
+    }
+  </style>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="kicker" x="64" y="76">P52 / Design automation + manufacturing</text>
+  <text class="title" x="64" y="126">몰드 사양을 자동 생성 제약으로 바꾸는 구조</text>
+  <text class="muted" x="64" y="168">두께, 주입구, base chamfer, support 조건을 설계 자동화 안에 넣습니다.</text>
+
+  <g transform="translate(84 246)">
+    <rect class="card" width="246" height="168" rx="14"/>
+    <circle class="accent" cx="38" cy="38" r="18"/>
+    <text class="label" x="30" y="45">01</text>
+    <text class="kicker" x="24" y="86">Specification</text>
+    <text class="body" x="24" y="124">몰드 기준 수치</text>
+  </g>
+  <path class="line" d="M334 330 H430"/>
+  <polygon points="430,330 412,320 412,340" fill="#2a3036"/>
+
+  <g transform="translate(464 218)">
+    <path class="mold" d="M84 254 C46 198 44 134 84 84 C132 26 240 24 288 84 C328 134 326 198 288 254 Z"/>
+    <path class="mold-cut" d="M122 216 C96 174 96 132 124 100 C158 62 214 62 248 100 C276 132 276 174 250 216 Z"/>
+    <rect class="accent2" x="174" y="232" width="36" height="76" rx="18"/>
+    <circle class="accent" cx="105" cy="264" r="14"/>
+    <circle class="accent" cx="267" cy="264" r="14"/>
+    <text class="kicker" x="74" y="22">Geometry guardrails</text>
+    <text class="body" x="52" y="58">wall / inlet / outlet / base</text>
+  </g>
+
+  <path class="line" d="M770 330 H866"/>
+  <polygon points="866,330 848,320 848,340" fill="#2a3036"/>
+  <g transform="translate(890 246)">
+    <rect class="card" width="246" height="168" rx="14"/>
+    <circle class="accent2" cx="38" cy="38" r="18"/>
+    <text class="label" x="30" y="45">03</text>
+    <text class="kicker" x="24" y="86">QA loop</text>
+    <text class="body" x="24" y="124">오류 검사·재빌드</text>
+  </g>
+
+  <g transform="translate(94 552)">
+    <rect class="card" width="220" height="92" rx="14"/>
+    <text class="body" x="22" y="38">두께 범위</text>
+    <text class="muted" x="22" y="70">wall control</text>
+  </g>
+  <g transform="translate(356 552)">
+    <rect class="card" width="220" height="92" rx="14"/>
+    <text class="body" x="22" y="38">주입구·배출구</text>
+    <text class="muted" x="22" y="70">flow path</text>
+  </g>
+  <g transform="translate(618 552)">
+    <rect class="card" width="220" height="92" rx="14"/>
+    <text class="body" x="22" y="38">필렛·챔퍼</text>
+    <text class="muted" x="22" y="70">base edge</text>
+  </g>
+  <g transform="translate(880 552)">
+    <rect class="card" width="220" height="92" rx="14"/>
+    <text class="body" x="22" y="38">서포트 분리</text>
+    <text class="muted" x="22" y="70">TPE printability</text>
+  </g>
+</svg>

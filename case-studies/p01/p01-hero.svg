@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1040" viewBox="0 0 1800 1040" role="img" aria-labelledby="title desc">
+  <title id="title">Public-safe medical CT segmentation to mesh hero visual</title>
+  <desc id="desc">A synthetic board showing DICOM CT slices, segmentation labels, nnU-Net v2 inference, mesh extraction, and validation artifacts without patient data.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#10141b"/>
+      <stop offset=".48" stop-color="#151b23"/>
+      <stop offset="1" stop-color="#080a0f"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fafc" stop-opacity=".98"/>
+      <stop offset="1" stop-color="#dfe8f1" stop-opacity=".88"/>
+    </linearGradient>
+    <linearGradient id="cyanLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2d5cff"/>
+      <stop offset=".5" stop-color="#11b8c9"/>
+      <stop offset="1" stop-color="#24a66a"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="26" stdDeviation="34" flood-color="#000000" flood-opacity=".36"/>
+    </filter>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#ffffff" stroke-opacity=".045" stroke-width="1"/>
+    </pattern>
+    <pattern id="mesh" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M0 42L42 0M-10 10L10 -10M32 52L52 32" fill="none" stroke="#a9e8ff" stroke-opacity=".23" stroke-width="1"/>
+    </pattern>
+    <clipPath id="headClip">
+      <path d="M1360 218c-89 0-156 72-156 169 0 54 21 102 55 134-16 34-40 70-74 107 90 26 191 23 271-7 81-30 139-86 157-162 25-107-22-241-153-276-20-5-40-8-60-8z"/>
+    </clipPath>
+  </defs>
+
+  <rect width="1800" height="1040" fill="url(#bg)"/>
+  <rect width="1800" height="1040" fill="url(#grid)"/>
+  <path d="M0 755C278 684 441 716 635 760c230 53 394 91 653 11 189-58 342-66 512-21v290H0Z" fill="#ffffff" opacity=".04"/>
+
+  <g transform="translate(86 74)">
+    <text x="0" y="0" fill="#7cd7ff" font-family="Pretendard, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="2">P01 / PUBLIC-SAFE RESULT BOARD</text>
+    <text x="0" y="72" fill="#ffffff" font-family="Pretendard, Arial, sans-serif" font-size="68" font-weight="860">Medical 3D AI Pipeline</text>
+    <text x="0" y="118" fill="#b6c2d1" font-family="Pretendard, Arial, sans-serif" font-size="28" font-weight="520">DICOM CT input to multi-label segmentation, mesh extraction, and review package</text>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="82" y="230" width="382" height="586" rx="30" fill="#f8fafc" opacity=".98"/>
+    <rect x="106" y="254" width="334" height="72" rx="18" fill="#111827"/>
+    <text x="130" y="299" fill="#ffffff" font-family="Pretendard, Arial, sans-serif" font-size="26" font-weight="830">DICOM CT</text>
+    <text x="130" y="363" fill="#536173" font-family="Pretendard, Arial, sans-serif" font-size="20" font-weight="650">synthetic slice stack</text>
+    <g transform="translate(132 404)">
+      <rect x="0" y="0" width="240" height="236" rx="24" fill="#e9eef5"/>
+      <g opacity=".86">
+        <ellipse cx="122" cy="118" rx="74" ry="91" fill="#d3dce8"/>
+        <ellipse cx="122" cy="118" rx="52" ry="70" fill="#f5f7fa"/>
+        <path d="M78 131c28-17 75-16 105 0" fill="none" stroke="#9aa8b9" stroke-width="10" stroke-linecap="round"/>
+        <path d="M91 95c30 15 70 15 102-2" fill="none" stroke="#9aa8b9" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="91" cy="118" r="10" fill="#b2becd"/>
+        <circle cx="155" cy="118" r="10" fill="#b2becd"/>
+      </g>
+      <path d="M22 26H218M22 205H218M27 26V205M213 26V205" fill="none" stroke="#ffffff" stroke-width="2" opacity=".55"/>
+    </g>
+    <text x="130" y="746" fill="#7b8797" font-family="Pretendard, Arial, sans-serif" font-size="19" font-weight="650">input package / case quality report</text>
+  </g>
+
+  <g transform="translate(518 322)">
+    <path d="M0 125H120" stroke="url(#cyanLine)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M102 89l51 36-51 36" fill="none" stroke="#11b8c9" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="670" y="232" width="466" height="586" rx="30" fill="#f8fafc" opacity=".98"/>
+    <rect x="696" y="258" width="416" height="82" rx="19" fill="#ecf8fb"/>
+    <text x="724" y="309" fill="#112433" font-family="Pretendard, Arial, sans-serif" font-size="29" font-weight="860">nnU-Net v2 inference</text>
+    <text x="724" y="377" fill="#536173" font-family="Pretendard, Arial, sans-serif" font-size="20" font-weight="650">fine-tuned multi-label output</text>
+
+    <g transform="translate(730 424)">
+      <rect x="0" y="0" width="276" height="230" rx="20" fill="#111827"/>
+      <rect x="28" y="32" width="220" height="28" rx="14" fill="#f2d7aa" opacity=".86"/>
+      <rect x="28" y="78" width="188" height="28" rx="14" fill="#eef0d8" opacity=".9"/>
+      <rect x="28" y="124" width="154" height="28" rx="14" fill="#16b7c9" opacity=".9"/>
+      <rect x="28" y="170" width="84" height="28" rx="14" fill="#fb7d32" opacity=".92"/>
+      <g transform="translate(296 8)">
+        <rect x="0" y="0" width="48" height="48" rx="12" fill="#f2d7aa"/>
+        <text x="68" y="32" fill="#637083" font-family="Pretendard, Arial, sans-serif" font-size="18" font-weight="760">skin</text>
+        <rect x="0" y="58" width="48" height="48" rx="12" fill="#eef0d8"/>
+        <text x="68" y="90" fill="#637083" font-family="Pretendard, Arial, sans-serif" font-size="18" font-weight="760">bone</text>
+        <rect x="0" y="116" width="48" height="48" rx="12" fill="#16b7c9"/>
+        <text x="68" y="148" fill="#637083" font-family="Pretendard, Arial, sans-serif" font-size="18" font-weight="760">airway</text>
+        <rect x="0" y="174" width="48" height="48" rx="12" fill="#fb7d32"/>
+        <text x="68" y="206" fill="#637083" font-family="Pretendard, Arial, sans-serif" font-size="18" font-weight="760">prosthesis</text>
+      </g>
+    </g>
+
+    <g transform="translate(724 720)">
+      <rect x="0" y="0" width="104" height="36" rx="18" fill="#e6f5ef"/>
+      <text x="20" y="24" fill="#246b57" font-family="Pretendard, Arial, sans-serif" font-size="16" font-weight="820">selected</text>
+      <text x="126" y="24" fill="#536173" font-family="Pretendard, Arial, sans-serif" font-size="18" font-weight="650">quality, tuning, inference, maintenance</text>
+    </g>
+  </g>
+
+  <g transform="translate(1184 520)">
+    <path d="M0 0H116" stroke="url(#cyanLine)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M98-36l51 36-51 36" fill="none" stroke="#24a66a" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g filter="url(#softShadow)">
+    <rect x="1326" y="210" width="390" height="606" rx="32" fill="#0f141d"/>
+    <rect x="1354" y="238" width="334" height="392" rx="28" fill="#15202d"/>
+    <rect x="1354" y="238" width="334" height="392" rx="28" fill="url(#mesh)" opacity=".9"/>
+    <g clip-path="url(#headClip)" transform="translate(0 0)">
+      <path d="M1360 218c-89 0-156 72-156 169 0 54 21 102 55 134-16 34-40 70-74 107 90 26 191 23 271-7 81-30 139-86 157-162 25-107-22-241-153-276-20-5-40-8-60-8z" fill="#1c2a38"/>
+      <path d="M1212 365c106-58 260-51 371 18M1220 444c106-39 240-36 350 10M1262 536c85-23 190-21 278 6M1288 265c110 88 141 225 84 348M1434 211c-55 147-35 271 64 371" fill="none" stroke="#80dfff" stroke-width="3" stroke-opacity=".7"/>
+      <path d="M1288 314c47 16 95 22 144 18M1295 388c67 24 135 22 203-6M1310 469c68 20 132 16 193-14" fill="none" stroke="#f4d8ae" stroke-width="11" stroke-opacity=".52" stroke-linecap="round"/>
+      <path d="M1266 512c76 39 166 38 268-2" fill="none" stroke="#24a66a" stroke-width="9" stroke-opacity=".72" stroke-linecap="round"/>
+      <path d="M1389 330c41 44 52 88 28 132" fill="none" stroke="#fb7d32" stroke-width="8" stroke-opacity=".82" stroke-linecap="round"/>
+    </g>
+    <text x="1354" y="690" fill="#ffffff" font-family="Pretendard, Arial, sans-serif" font-size="30" font-weight="860">Mesh / STL preview</text>
+    <text x="1354" y="730" fill="#a9b6c8" font-family="Pretendard, Arial, sans-serif" font-size="20" font-weight="640">synthetic geometry, public-safe</text>
+    <g transform="translate(1354 762)">
+      <rect x="0" y="0" width="94" height="34" rx="17" fill="#102e3d"/>
+      <text x="20" y="23" fill="#7cd7ff" font-family="Pretendard, Arial, sans-serif" font-size="15" font-weight="820">STL</text>
+      <rect x="110" y="0" width="120" height="34" rx="17" fill="#122d24"/>
+      <text x="130" y="23" fill="#8ee0bd" font-family="Pretendard, Arial, sans-serif" font-size="15" font-weight="820">validation</text>
+    </g>
+  </g>
+
+  <g transform="translate(86 878)">
+    <rect x="0" y="0" width="548" height="76" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="28" y="31" fill="#ffffff" font-family="Pretendard, Arial, sans-serif" font-size="20" font-weight="850">Decision</text>
+    <text x="28" y="55" fill="#b6c2d1" font-family="Pretendard, Arial, sans-serif" font-size="17" font-weight="600">not newest, but most operationally fit</text>
+    <rect x="580" y="0" width="548" height="76" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="608" y="31" fill="#ffffff" font-family="Pretendard, Arial, sans-serif" font-size="20" font-weight="850">Evidence</text>
+    <text x="608" y="55" fill="#b6c2d1" font-family="Pretendard, Arial, sans-serif" font-size="17" font-weight="600">model trade-off, pipeline, job flow, validation package</text>
+    <rect x="1160" y="0" width="430" height="76" rx="18" fill="#ffffff" fill-opacity=".08" stroke="#ffffff" stroke-opacity=".12"/>
+    <text x="1188" y="31" fill="#ffffff" font-family="Pretendard, Arial, sans-serif" font-size="20" font-weight="850">Boundary</text>
+    <text x="1188" y="55" fill="#b6c2d1" font-family="Pretendard, Arial, sans-serif" font-size="17" font-weight="600">no patient data, no hospital identifiers</text>
+  </g>
+</svg>
