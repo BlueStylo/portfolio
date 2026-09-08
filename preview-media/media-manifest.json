@@ -1,0 +1,48 @@
+{
+  "notes": [
+    "Existing publicly included source videos only; original files unchanged.",
+    "Contiguous excerpts preserve source playback timing. No speed changes, cropping, compositing, or audio.",
+    "H.264, 24 fps, yuv420p, MP4 faststart; source aspect ratio retained within even-pixel encoding rounding."
+  ],
+  "files": [
+    {
+      "output": "hero-robot.mp4",
+      "source": "case-studies/p41/p41-vr-behavior-recording.mp4",
+      "source_start_seconds": 14,
+      "source_end_seconds": 24,
+      "duration_seconds": 10,
+      "width": 1280,
+      "height": 720,
+      "bytes": 1215885,
+      "caption": "Quest 목표 자세 입력과 실제 PAROL6 자세 변화, 원본 00:14–00:24 발췌",
+      "poster": "hero-robot-poster.jpg",
+      "poster_source_seconds": 14
+    },
+    {
+      "output": "preview-medical.mp4",
+      "source": "case-studies/p01/case004-segmentation-comparison.mp4",
+      "source_start_seconds": 4,
+      "source_end_seconds": 12,
+      "duration_seconds": 8,
+      "width": 1280,
+      "height": 702,
+      "bytes": 301090,
+      "caption": "CT 원본·정답 마스크·예측 마스크 비교, 원본 00:04–00:12 발췌",
+      "poster": "preview-medical-poster.jpg",
+      "poster_source_seconds": 4
+    },
+    {
+      "output": "preview-moldtrace.mp4",
+      "source": "case-studies/p60/p60-demo-short-safe.mp4",
+      "source_start_seconds": 5.25,
+      "source_end_seconds": 13.25,
+      "duration_seconds": 8,
+      "width": 500,
+      "height": 692,
+      "bytes": 105584,
+      "caption": "MoldTrace 공개용 검증 데모, 원본 00:05.25–00:13.25 발췌",
+      "poster": "preview-moldtrace-poster.jpg",
+      "poster_source_seconds": 9.75
+    }
+  ]
+}
