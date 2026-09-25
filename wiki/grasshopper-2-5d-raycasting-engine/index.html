@@ -34,7 +34,9 @@ gh 파일의 노드 연결을 그대로 옮긴 것입니다. 수식 04의 코사
           const playIcon = '<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 2l7 4-7 4z" fill="currentColor"/></svg>';
           const expandIcon = '<svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M7 1.5h3.5V5M5 10.5H1.5V7M10.5 1.5 7 5M1.5 10.5 5 7" stroke="currentColor" stroke-width="1.2"/></svg>';
 
-          const canAutoplay = (video) => !reduceMotion.matches && video.dataset.userPaused !== "true" && !document.hidden;
+          const conn = navigator.connection || {};
+          const lean = conn.saveData || /(^|-)2g|3g/.test(conn.effectiveType || "");
+          const canAutoplay = (video) => !reduceMotion.matches && !lean && video.dataset.userPaused !== "true" && !document.hidden;
           const syncToggle = (video) => {
             const toggle = video._caseToggle;
             if (!toggle) return;
