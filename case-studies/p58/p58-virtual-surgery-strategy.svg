@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Virtual surgery vendor evaluation and internalization strategy</title>
+  <desc id="desc">A redacted strategy diagram comparing external virtual surgery software with internal platform development criteria.</desc>
+  <style>
+    text {
+      font-family: Inter, Pretendard, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      fill: #22272d;
+    }
+    .bg {
+      fill: #f5f6f8;
+    }
+    .column {
+      fill: #ffffff;
+      stroke: #d9dde4;
+      stroke-width: 2;
+    }
+    .bridge {
+      fill: #e8eef5;
+      stroke: #c9d3df;
+      stroke-width: 2;
+    }
+    .accent {
+      fill: #376f95;
+    }
+    .accent2 {
+      fill: #8b6842;
+    }
+    .line {
+      fill: none;
+      stroke: #22272d;
+      stroke-linecap: round;
+      stroke-width: 3;
+    }
+    .kicker {
+      fill: #376f95;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    .title {
+      font-size: 38px;
+      font-weight: 900;
+    }
+    .muted {
+      fill: #66707a;
+      font-size: 23px;
+      font-weight: 720;
+    }
+    .body {
+      fill: #46515c;
+      font-size: 22px;
+      font-weight: 680;
+    }
+    .white {
+      fill: #ffffff;
+      font-size: 18px;
+      font-weight: 900;
+    }
+  </style>
+  <rect class="bg" width="1200" height="760"/>
+  <text class="kicker" x="64" y="76">P58 / Private strategy, redacted</text>
+  <text class="title" x="64" y="126">가상성형 외부 솔루션 검토를 내부 제품 전략으로 바꾸기</text>
+  <text class="muted" x="64" y="168">외부 툴 도입 가능성, API/라이선스, 내부 AI·3D 파이프라인의 대체 가능성을 함께 봅니다.</text>
+
+  <g transform="translate(72 252)">
+    <rect class="column" width="318" height="334" rx="16"/>
+    <rect class="accent2" x="24" y="24" width="132" height="34" rx="17"/>
+    <text class="white" x="44" y="48">External</text>
+    <text class="kicker" x="24" y="94">검토 축</text>
+    <text class="body" x="24" y="138">시연 품질</text>
+    <text class="body" x="24" y="182">계약·라이선스</text>
+    <text class="body" x="24" y="226">API / SDK 가능성</text>
+    <text class="body" x="24" y="270">데이터 반출 조건</text>
+  </g>
+
+  <g transform="translate(442 314)">
+    <rect class="bridge" width="316" height="210" rx="16"/>
+    <text class="kicker" x="28" y="54">Decision matrix</text>
+    <text class="body" x="28" y="98">buy / partner / build</text>
+    <text class="body" x="28" y="142">demo fallback plan</text>
+    <text class="body" x="28" y="186">public-safe summary</text>
+  </g>
+
+  <path class="line" d="M394 420 H438"/>
+  <polygon points="438,420 420,410 420,430" fill="#22272d"/>
+  <path class="line" d="M762 420 H806"/>
+  <polygon points="806,420 788,410 788,430" fill="#22272d"/>
+
+  <g transform="translate(810 252)">
+    <rect class="column" width="318" height="334" rx="16"/>
+    <rect class="accent" x="24" y="24" width="132" height="34" rx="17"/>
+    <text class="white" x="44" y="48">Internal</text>
+    <text class="kicker" x="24" y="94">내재화 축</text>
+    <text class="body" x="24" y="138">CT / mesh pipeline</text>
+    <text class="body" x="24" y="182">얼굴 정합 UX</text>
+    <text class="body" x="24" y="226">가상성형 viewer</text>
+    <text class="body" x="24" y="270">보안·배포 조건</text>
+  </g>
+
+  <g transform="translate(156 642)">
+    <text class="muted" x="0" y="0">포트폴리오 공개본은 회사명·협력사명·가격·계약 조건을 제거하고, 판단 프레임만 남깁니다.</text>
+  </g>
+</svg>
